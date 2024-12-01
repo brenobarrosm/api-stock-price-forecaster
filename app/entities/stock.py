@@ -8,4 +8,4 @@ class StockPriceDTO(ConfiguredBaseModel):
 
 
 class HistoricalStockPricesDTO(ConfiguredBaseModel):
-    historical_prices: List[float]
+    prices: List[float]
