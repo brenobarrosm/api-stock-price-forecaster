@@ -1,10 +1,8 @@
+import os
 import torch
 import torch.nn as nn
-import numpy as np
-import mlflow
-from sklearn.preprocessing import MinMaxScaler
 
-MODEL_PATH = "C:/Users/Breno/PycharmProjects/api-stock-price-forecaster/app/utils/lstm_stock_model.pth"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "lstm_stock_model.pth")
 
 
 class LSTM(nn.Module):
